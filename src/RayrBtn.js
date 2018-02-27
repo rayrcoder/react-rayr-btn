@@ -12,7 +12,8 @@ class RayrBtn extends React.Component {
     static defaultProps = {
         type: 'default',
         disabled: false,
-        size: 'md'
+        size: 'md',
+        className: ''
     };
 
     render() {
@@ -20,7 +21,7 @@ class RayrBtn extends React.Component {
         let _classType = this.props.type !== 'default' ? `rayr-btn-${this.props.type}` : '',
             _classSize = this.props.type !== 'md' ? `rayr-btn-${this.props.size}` : '';
 
-        let _class = `rayr-btn ${_classType} ${_classSize}`;
+        let _class = `rayr-btn ${_classType} ${_classSize} ${this.props.className}`;
 
         return (
             <button

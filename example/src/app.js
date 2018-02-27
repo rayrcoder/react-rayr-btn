@@ -4,15 +4,15 @@ import './app.scss';
 import 'babel-polyfill';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {RayrBtn} from 'react-rayr-btn';
+import {RayrBtn, RayrBtnGroup} from 'react-rayr-btn';
 
 function App() {
     return (
         <div className={'container'}>
-            <h1>按钮组件</h1>
+            <h2>按钮组件</h2>
             <div className={'item'}>
                 <div className={'title'}>Primary Button</div>
-                <RayrBtn type={'primary'}>常态</RayrBtn>
+                <RayrBtn type={'primary'} className={'test'}>常态</RayrBtn>
                 <RayrBtn type={'primary'} onClick={(e) => {
                     console.log(e);
                     alert('hello!')
@@ -21,15 +21,15 @@ function App() {
             </div>
             <div className={'item'}>
                 <div className={'title'}>Danger Button</div>
-                <RayrBtn type={'danger'}>危险按钮</RayrBtn>
+                <RayrBtn type={'danger'}>危险</RayrBtn>
                 <RayrBtn type={'danger'}>点击我</RayrBtn>
-                <RayrBtn type={'danger'} disabled={true}>危险按钮</RayrBtn>
+                <RayrBtn type={'danger'} disabled={true}>危险</RayrBtn>
             </div>
             <div className={'item'}>
                 <div className={'title'}>Default Button</div>
-                <RayrBtn>次按钮</RayrBtn>
+                <RayrBtn>默认</RayrBtn>
                 <RayrBtn>点击我</RayrBtn>
-                <RayrBtn disabled={true}>次按钮</RayrBtn>
+                <RayrBtn disabled={true}>默认</RayrBtn>
             </div>
             <div className={'item'}>
                 <div className={'title'}>small Button</div>
@@ -48,6 +48,14 @@ function App() {
                 <RayrBtn size={'sm'}>次操作</RayrBtn>
                 <RayrBtn size={'sm'}>点击我</RayrBtn>
                 <RayrBtn size={'sm'} disabled={true}>次操作</RayrBtn>
+            </div>
+            <h2>基础按钮组</h2>
+            <div className={'item2'}>
+                <RayrBtnGroup>
+                    <RayrBtn>创建</RayrBtn>
+                    <RayrBtn>发布</RayrBtn>
+                    <RayrBtn>删除</RayrBtn>
+                </RayrBtnGroup>
             </div>
         </div>
     )

@@ -4,7 +4,7 @@
 
 .container {
     position: relative;
-    width: 1000px;
+    max-width: 1000px;
     margin: 0 auto;
     .item {
         display: flex;
@@ -15,6 +15,13 @@
         .title {
             width: 120px;
             flex: none;
+        }
+    }
+    .item2 {
+        display: flex;
+        margin-top: 20px;
+        .rayr-btngroup {
+            margin-right: 10px;
         }
     }
 }
