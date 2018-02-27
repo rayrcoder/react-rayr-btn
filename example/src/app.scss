@@ -1,0 +1,20 @@
+/**
+ * Created by Rayr Lee on 2018/2/27.
+ */
+
+.container {
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+    .item {
+        display: flex;
+        margin-top: 20px;
+        .rayr-btn {
+            margin-left: 10px;
+        }
+        .title {
+            width: 120px;
+            flex: none;
+        }
+    }
+}
