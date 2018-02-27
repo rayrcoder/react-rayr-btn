@@ -67,12 +67,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/rayrlee2013/react-rayr-btn.git"
+    "url": "https://github.com/rayrcoder/react-rayr-btn.git"
   },
   "author": "lilei",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rayrlee2013/react-rayr-btn/issues"
+    "url": "https://github.com/rayrcoder/react-rayr-btn/issues"
   },
-  "homepage": "https://github.com/rayrlee2013/react-rayr-btn"
+  "homepage": "https://github.com/rayrcoder/react-rayr-btn"
 }
