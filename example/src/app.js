@@ -9,53 +9,39 @@ import {RayrBtn, RayrBtnGroup} from 'react-rayr-btn';
 function App() {
     return (
         <div className={'container'}>
-            <h2>按钮组件</h2>
+            <h2>基础用法</h2>
             <div className={'item'}>
-                <div className={'title'}>Primary Button</div>
-                <RayrBtn type={'primary'} className={'test'}>常态</RayrBtn>
-                <RayrBtn type={'primary'} onClick={(e) => {
-                    console.log(e);
+                <RayrBtn>默认按钮</RayrBtn>
+                <RayrBtn type={'primary'} className={'test'}>主要按钮</RayrBtn>
+                <RayrBtn type={'warning'} onClick={(e) => {
                     alert('hello!')
-                }}>点击我</RayrBtn>
-                <RayrBtn type={'primary'} disabled={true}>禁用</RayrBtn>
+                }}>警告按钮</RayrBtn>
+                <RayrBtn type={'primary'} size="sm">次要按钮</RayrBtn>
+                <RayrBtn type={'primary'} size="xs">信息按钮</RayrBtn>
             </div>
             <div className={'item'}>
-                <div className={'title'}>Danger Button</div>
-                <RayrBtn type={'danger'}>危险</RayrBtn>
-                <RayrBtn type={'danger'}>点击我</RayrBtn>
-                <RayrBtn type={'danger'} disabled={true}>危险</RayrBtn>
+                <RayrBtn>朴素按钮</RayrBtn>
+                <RayrBtn type={'primary'} inverse>主要按钮</RayrBtn>
+                <RayrBtn type={'warning'} inverse>警告按钮</RayrBtn>
+                <RayrBtn type={'primary'} inverse size="sm">次要按钮</RayrBtn>
+                <RayrBtn type={'primary'} inverse size="xs">信息按钮</RayrBtn>
+            </div>
+            <h2>禁用状态</h2>
+            <div className={'item'}>
+                <RayrBtn disabled>默认按钮</RayrBtn>
+                <RayrBtn disabled type={'primary'} className={'test'}>主要按钮</RayrBtn>
+                <RayrBtn disabled type={'warning'} onClick={(e) => {
+                    alert('hello!')
+                }}>警告按钮</RayrBtn>
+                <RayrBtn disabled type={'primary'} size="sm">次要按钮</RayrBtn>
+                <RayrBtn disabled type={'primary'} size="xs">信息按钮</RayrBtn>
             </div>
             <div className={'item'}>
-                <div className={'title'}>Default Button</div>
-                <RayrBtn>默认</RayrBtn>
-                <RayrBtn>点击我</RayrBtn>
-                <RayrBtn disabled={true}>默认</RayrBtn>
-            </div>
-            <div className={'item'}>
-                <div className={'title'}>small Button</div>
-                <RayrBtn type={'primary'} size={'sm'}>主按钮</RayrBtn>
-                <RayrBtn type={'primary'} size={'sm'}>点击我</RayrBtn>
-                <RayrBtn type={'primary'} size={'sm'} disabled={true}>主按钮</RayrBtn>
-            </div>
-            <div className={'item'}>
-                <div className={'title'}>small Button</div>
-                <RayrBtn type={'danger'} size={'sm'}>主按钮</RayrBtn>
-                <RayrBtn type={'danger'} size={'sm'}>点击我</RayrBtn>
-                <RayrBtn type={'danger'} size={'sm'} disabled={true}>主按钮</RayrBtn>
-            </div>
-            <div className={'item'}>
-                <div className={'title'}>small Button</div>
-                <RayrBtn size={'sm'}>次操作</RayrBtn>
-                <RayrBtn size={'sm'}>点击我</RayrBtn>
-                <RayrBtn size={'sm'} disabled={true}>次操作</RayrBtn>
-            </div>
-            <h2>基础按钮组</h2>
-            <div className={'item2'}>
-                <RayrBtnGroup>
-                    <RayrBtn>创建</RayrBtn>
-                    <RayrBtn>发布</RayrBtn>
-                    <RayrBtn>删除</RayrBtn>
-                </RayrBtnGroup>
+                <RayrBtn disabled>朴素按钮</RayrBtn>
+                <RayrBtn disabled type={'primary'} inverse>主要按钮</RayrBtn>
+                <RayrBtn disabled type={'warning'} inverse>警告按钮</RayrBtn>
+                <RayrBtn disabled type={'primary'} inverse size="sm">次要按钮</RayrBtn>
+                <RayrBtn disabled type={'primary'} inverse size="xs">信息按钮</RayrBtn>
             </div>
         </div>
     )

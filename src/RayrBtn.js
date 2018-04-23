@@ -4,31 +4,31 @@ import classnames from 'classnames';
 
 class RayrBtn extends React.Component {
     static propTypes = {
-        type: PropTypes.oneOf(['primary', 'default', 'danger']),
-        disabled: PropTypes.oneOf([true, false]),
-        size: PropTypes.oneOf(['md', 'lg', 'sm'])
+        type: PropTypes.oneOf(['primary', 'default', 'warning']),
+        size: PropTypes.oneOf(['md', 'xs', 'sm']),
+        inverse: PropTypes.oneOf([true, false])
     };
 
     static defaultProps = {
         type: 'default',
-        disabled: false,
         size: 'md',
-        className: ''
+        className: '',
+        inverse: false
     };
 
     render() {
 
-        let _classType = this.props.type !== 'default' ? `rayr-btn-${this.props.type}` : '',
-            _classSize = this.props.type !== 'md' ? `rayr-btn-${this.props.size}` : '';
-
-        let _class = `rayr-btn ${_classType} ${_classSize} ${this.props.className}`;
+        var btnClass = classnames({
+            'rayr-btn': true,
+            'rayr-btn-primary': this.props.type === 'primary',
+            'rayr-btn-warning': this.props.type === 'warning',
+            'rayr-btn-sm': this.props.size === 'sm',
+            'rayr-btn-xs': this.props.size === 'xs',
+            'rayr-btn-inverse': this.props.inverse
+        });
 
         return (
-            <button
-                onClick={this.props.onClick}
-                disabled={this.props.disabled}
-                className={_class}>{this.props.children}
-            </button>
+            <button {...this.props} className={btnClass}>{this.props.children}</button>
         );
     }
 }
