@@ -1,6 +1,6 @@
 {
   "name": "react-rayr-btn",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "react-rayr-btn",
   "main": "lib/index.js",
   "scripts": {
@@ -16,6 +16,7 @@
   ],
   "dependencies": {
     "classnames": "^2.2.5",
+    "font-awesome": "^4.7.0",
     "prop-types": "^15.6.0",
     "react-transition-group": "^2.2.1"
   },

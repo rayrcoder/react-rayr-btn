@@ -6,7 +6,8 @@ class RayrBtn extends React.Component {
     static propTypes = {
         type: PropTypes.oneOf(['primary', 'default', 'warning']),
         size: PropTypes.oneOf(['md', 'xs', 'sm']),
-        inverse: PropTypes.oneOf([true, false])
+        inverse: PropTypes.bool,
+        icon: PropTypes.oneOf(['plus', 'refresh', 'search', 'check', 'close', 'download'])
     };
 
     static defaultProps = {
@@ -16,7 +17,14 @@ class RayrBtn extends React.Component {
         inverse: false
     };
 
+    iconInit() {
+        const {icon} = this.props;
+        return icon ? <i className={`fa fa-${icon}`}></i> : null
+    }
+
     render() {
+
+        console.log(this.props.inverse);
 
         var btnClass = classnames({
             'rayr-btn': true,
@@ -28,7 +36,7 @@ class RayrBtn extends React.Component {
         });
 
         return (
-            <button {...this.props} className={btnClass}>{this.props.children}</button>
+            <button {...this.props} className={btnClass}>{this.iconInit()}{this.props.children}</button>
         );
     }
 }

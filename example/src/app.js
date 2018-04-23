@@ -43,6 +43,16 @@ function App() {
                 <RayrBtn disabled type={'primary'} inverse size="sm">次要按钮</RayrBtn>
                 <RayrBtn disabled type={'primary'} inverse size="xs">信息按钮</RayrBtn>
             </div>
+            <h2>图标按钮</h2>
+            <div className={'item'}>
+                <RayrBtn icon="plus">新增</RayrBtn>
+                <RayrBtn type={'primary'} className={'test'} icon="download">导出</RayrBtn>
+                <RayrBtn type={'warning'} icon="search">查询</RayrBtn>
+                <RayrBtn type={'primary'} icon="check">确定</RayrBtn>
+                <RayrBtn type={'primary'} icon="plus">新增车辆</RayrBtn>
+                <RayrBtn type={'primary'} inverse icon="close">取消</RayrBtn>
+                <RayrBtn type={'primary'} inverse icon="refresh">重置</RayrBtn>
+            </div>
         </div>
     )
 }

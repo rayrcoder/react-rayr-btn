@@ -1,3 +1,86 @@
+@import url(../node_modules/font-awesome/css/font-awesome.min.css);
 .rayr-btn {
-  background-color: red;
+  display: inline-block;
+  font-size: 14px;
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #DBDBDB;
+  padding: 6px 20px;
+  outline: none;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all .2s;
+  font-weight: 200;
+}
+
+.rayr-btn:disabled {
+  cursor: not-allowed;
+}
+
+.rayr-btn .fa {
+  font-weight: 100;
+  margin-right: 5px;
+}
+
+.rayr-btn-primary {
+  background-color: #5797FB;
+  color: #fff;
+  border: 1px solid #5797FB;
+}
+
+.rayr-btn-warning {
+  background-color: #FFA023;
+  color: #fff;
+  border: 1px solid #FC9153;
+}
+
+.rayr-btn-primary.rayr-btn-inverse {
+  border-color: #DBDBDB;
+  background-color: #fff;
+  color: #5797FB;
+}
+
+.rayr-btn-warning.rayr-btn-inverse {
+  background-color: #fff;
+  color: #FFA023;
+}
+
+.rayr-btn-sm {
+  padding: 0 10px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 12px;
+}
+
+.rayr-btn-xs {
+  padding: 2px 8px;
+  font-size: 12px;
+}
+
+.rayr-btngroup {
+  position: relative;
+  display: inline-block;
+}
+
+.rayr-btngroup .rayr-btn {
+  margin: 0 !important;
+  border-radius: 0;
+  margin-left: -1px !important;
+}
+
+.rayr-btngroup .rayr-btn:first-child {
+  margin-left: 0 !important;
+  border-bottom-left-radius: 2px;
+  border-top-left-radius: 2px;
+}
+
+.rayr-btngroup .rayr-btn:last-child {
+  border-bottom-right-radius: 2px;
+  border-top-right-radius: 2px;
+}
+
+.rayr-btngroup .rayr-btn:active {
+  border-color: #D9D9D9;
+  background-color: #D9D9D9;
+  color: #595959;
 }

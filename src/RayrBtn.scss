@@ -1,3 +1,5 @@
+@import "../node_modules/font-awesome/css/font-awesome.min.css";
+
 $primary: #5797FB;
 
 $default-border: #DBDBDB;
@@ -22,6 +24,10 @@ $warn-border: #FC9153;
     }
     &:disabled {
         cursor: not-allowed;
+    }
+    .fa {
+        font-weight: 100;
+        margin-right: 5px;
     }
 }
 
@@ -55,7 +61,6 @@ $warn-border: #FC9153;
     background-color: #fff;
     color: $warn-bg;
 }
-
 
 //尺寸
 .rayr-btn-sm {
