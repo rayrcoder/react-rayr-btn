@@ -24,8 +24,6 @@ class RayrBtn extends React.Component {
 
     render() {
 
-        console.log(this.props.inverse);
-
         var btnClass = classnames({
             'rayr-btn': true,
             'rayr-btn-primary': this.props.type === 'primary',

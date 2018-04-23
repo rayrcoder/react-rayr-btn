@@ -1,3 +1,4 @@
+import "font-awesome/css/font-awesome.min.css";
 import 'react-rayr-btn/src/RayrBtn.scss';
 import './app.scss';
 
