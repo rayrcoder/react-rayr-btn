@@ -14,7 +14,8 @@ class RayrBtn extends React.Component {
         type: 'default',
         size: 'md',
         className: '',
-        inverse: false
+        inverse: false,
+        icon: ''
     };
 
     iconInit() {
