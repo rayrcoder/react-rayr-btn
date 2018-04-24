@@ -18,10 +18,11 @@ $warn-border: #FC9153;
     transition: all .2s;
     font-weight: 200;
     &:active {
-
+        background-color: darken(#fff, 10%);
     }
     &:disabled {
         cursor: not-allowed;
+        opacity: 0.7;
     }
     .fa {
         font-weight: 100;
@@ -34,7 +35,7 @@ $warn-border: #FC9153;
     color: #fff;
     border: 1px solid $primary;
     &:active {
-
+        background-color: darken($primary, 10%);
     }
 }
 
@@ -43,7 +44,7 @@ $warn-border: #FC9153;
     color: #fff;
     border: 1px solid $warn-border;
     &:active {
-
+        background-color: darken($warn-bg, 10%);
     }
 }
 
@@ -53,11 +54,21 @@ $warn-border: #FC9153;
     border-color: $default-border;
     background-color: #fff;
     color: $primary;
+    &:active {
+        background-color: $primary;
+        color: #fff;
+        border: 1px solid $primary;
+    }
 }
 
 .rayr-btn-warning.rayr-btn-inverse {
     background-color: #fff;
     color: $warn-bg;
+    &:active {
+        background-color: $warn-bg;
+        color: #fff;
+        border: 1px solid $warn-border;
+    }
 }
 
 //尺寸
