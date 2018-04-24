@@ -6,15 +6,13 @@ class RayrBtn extends React.Component {
     static propTypes = {
         type: PropTypes.oneOf(['primary', 'default', 'warning']),
         size: PropTypes.oneOf(['md', 'xs', 'sm']),
-        inverse: PropTypes.bool,
         icon: PropTypes.oneOf(['plus', 'refresh', 'search', 'check', 'close', 'download'])
     };
 
     static defaultProps = {
         type: 'default',
         size: 'md',
-        className: '',
-        inverse: false
+        className: ''
     };
 
     iconInit() {
