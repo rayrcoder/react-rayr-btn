@@ -10,6 +10,7 @@
   border-radius: 2px;
   transition: all .2s;
   font-weight: 200;
+  white-space: nowrap;
 }
 
 .rayr-btn:active {
